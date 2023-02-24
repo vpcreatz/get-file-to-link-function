@@ -27,7 +27,7 @@ def send_message_to_user(bot, update):
     bot.send_message(chat_id=user_id, text=message_text)
 
 # create a handler for incoming messages that contain a document
-@app.on_message(filters.document & filters.user(username="@File_to_pdisk_link_bot"))
+@app.on_message(filters.document & filters.user)
 def handle_document(bot, update):
     # forward the received file to the bot
     forward_file_to_bot(bot, update)
