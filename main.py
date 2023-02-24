@@ -17,7 +17,8 @@ def forward_file_to_bot(bot, update):
 # define a function to send the message to a user
 def send_message_to_user(bot, update):
     # get the chat ID of the user to send the message to
-    user_id = <code>{}</code>
+    user_id = "{}".format(YOUR_USER_ID)
+
     
     # get the text of the received message
     message_text = update.message.text
