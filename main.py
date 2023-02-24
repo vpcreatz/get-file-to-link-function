@@ -1,7 +1,16 @@
 from pyrogram import Client, filters
 
 # create a new Pyrogram client
-app = Client("my_bot")
+api_id = "20960397"
+api_hash = "d68d847d3abb2087bf74f5d0683c2993"
+bot_token = "6243344021:AAEJS2Bb05V3YUPrjN_p16O4nOkmsqMa3Uk"
+
+# create a new Pyrogram client
+app = Client(
+    "app",
+    api_id=api_id, api_hash=api_hash,
+    bot_token=bot_token
+)
 
 # define a custom filter that checks if the message text contains a given string
 def text_contains(text):
