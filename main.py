@@ -1,7 +1,15 @@
 from pyrogram import Client, filters
 
+api_id = "20960397"
+api_hash = "d68d847d3abb2087bf74f5d0683c2993"
+bot_token = "6243344021:AAEJS2Bb05V3YUPrjN_p16O4nOkmsqMa3Uk"
+
 # create a new Pyrogram client
-app = Client("6243344021:AAEJS2Bb05V3YUPrjN_p16O4nOkmsqMa3Uk")
+app = Client(
+    "app",
+    api_id=api_id, api_hash=api_hash,
+    bot_token=bot_token
+)
 
 # define a function to forward the file to a bot
 def forward_file_to_bot(bot, update):
